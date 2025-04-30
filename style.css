@@ -1,0 +1,31 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
+  }
+  
+  .box {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    animation: bounce 2s ease-in-out infinite;
+  }
+  
+  /* Keyframe animation */
+  @keyframes bounce {
+    0% {
+      transform: translateY(0);
+      background-color: red;
+    }
+    50% {
+      transform: translateY(-50px);
+      background-color: green;
+    }
+    100% {
+      transform: translateY(0);
+      background-color: red;
+    }
+  }
